@@ -24,6 +24,47 @@
   height: 100px;
   z-index: 1;
 }
+.main .header .burgerMenu {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 3;
+}
+.main .header .burgerMenu input {
+  width: 50px;
+  height: 42px;
+  opacity: 0%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  z-index: 4;
+}
+.main .header .burgerMenu span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #F4F1E0;
+  transition: 0.3s ease-in;
+}
+.main .header .burgerMenu span:nth-child(2) {
+  transform-origin: 0% 0%;
+}
+.main .header .burgerMenu span:last-child {
+  transform-origin: 0% 100%;
+}
+.main .header .burgerMenu input:checked ~ span {
+  transform: rotate(45deg) translate(0px, 0px);
+  background-color: black;
+}
+.main .header .burgerMenu input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.main .header .burgerMenu input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
 .main .header img {
   height: 100px;
   width: auto;
@@ -45,7 +86,7 @@
 }
 .main .header #menu ul li {
   margin: 35px 0px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   width: 100%;
   text-align: center;
 }
