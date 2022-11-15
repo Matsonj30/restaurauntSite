@@ -1,0 +1,16 @@
+.main{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+        background-color: black;
+   
+    #backgroundImage{
+        position: fixed;
+        width: max(100%, 1700px);
+        height: 1200px;
+        opacity: 0.2;
+        transform: translateX(-200px);
+        z-index: 0;
+    }
+    
+}

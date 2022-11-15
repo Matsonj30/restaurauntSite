@@ -1,0 +1,10 @@
+$primaryColor: #F4F1E0;
+$white: FAFAFA;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@import "homePage/_main.scss";
+@import "_header.scss";
