@@ -6,7 +6,7 @@
    
     #backgroundImage{
         position: fixed;
-        width: max(100%, 1700px);
+        width: calc(max(100%, 1700px));
         height: 1200px;
         opacity: 0.2;
         transform: translateX(-200px);
