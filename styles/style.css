@@ -1,17 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .main {
@@ -22,46 +18,33 @@
   background-color: black;
   z-index: -2;
 }
-
 .main #backgroundImage {
   position: fixed;
-  width: calc(max(100%, 1700px));
+  width: max(100%, 1700px);
   height: 1200px;
   opacity: 0.2;
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
+  transform: translateX(-200px);
   z-index: -1;
 }
-
 .main .introduction {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 700px;
   z-index: 1;
   padding-top: 30px;
   color: #FAFAFA;
 }
-
 .main .introduction h1 {
   font-size: 40px;
   padding-bottom: 30px;
   text-align: center;
 }
-
 .main .introduction p {
   padding-bottom: 30px;
   text-align: center;
 }
-
 .main .introduction button {
   width: 175px;
   height: 50px;
@@ -70,19 +53,16 @@
   border: 3px solid #FAFAFA;
   background-color: transparent;
   color: #FAFAFA;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .main .introduction button:hover {
-  border: 3px solid #ee9b01;
-  color: #ee9b01;
+  border: 3px solid rgb(238, 155, 1);
+  color: rgb(238, 155, 1);
 }
 
 @media (min-width: 900px) {
   .main #backgroundImage {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
   .main .introduction {
     padding-top: 130px;
@@ -91,27 +71,20 @@
     font-size: 50px;
   }
 }
-
 .main .header {
   position: relative;
   width: 100%;
   height: 125px;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main .header .burgerMenu {
   position: absolute;
   top: 50px;
   right: 50px;
   z-index: 3;
 }
-
 .main .header .burgerMenu input {
   width: 50px;
   height: 42px;
@@ -121,7 +94,6 @@
   left: -5px;
   z-index: 4;
 }
-
 .main .header .burgerMenu span {
   display: block;
   width: 40px;
@@ -129,43 +101,30 @@
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #F4F1E0;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
-
 .main .header .burgerMenu span:nth-child(2) {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
-
 .main .header .burgerMenu span:last-child {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
-
 .main .header .burgerMenu input:checked ~ span {
-  -webkit-transform: rotate(45deg) translate(0px, 0px);
-          transform: rotate(45deg) translate(0px, 0px);
+  transform: rotate(45deg) translate(0px, 0px);
   background-color: black;
 }
-
 .main .header .burgerMenu input:checked ~ span:nth-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 .main .header .burgerMenu input:checked ~ span:nth-child(4) {
-  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
-          transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
 }
-
 .main .header img {
   height: 100px;
   width: auto;
   padding-left: 20px;
 }
-
 .main .header #menu {
   position: absolute;
   top: 0;
@@ -173,34 +132,22 @@
   width: 100%;
   background-color: #F4F1E0;
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  -webkit-transform: translateY(1000px);
-          transform: translateY(1000px);
+  transform: translateY(1000px);
 }
-
 .main .header #menu ul {
   padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 }
-
 .main .header #menu ul li {
   margin: 35px 0px;
   border-bottom: 2px solid black;
   width: 100%;
   text-align: center;
 }
-
 .main .header #menu ul li a {
   color: black;
   text-decoration: none;
@@ -209,16 +156,13 @@
 
 @media (min-width: 900px) {
   .main .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .main .header .burgerMenu {
     display: none;
   }
   .main .header #menu {
-    -webkit-transform: translateY(0px) !important;
-            transform: translateY(0px) !important;
+    transform: translateY(0px) !important;
     background-color: transparent;
     position: relative;
     height: 100%;
@@ -226,16 +170,9 @@
   }
   .main .header #menu ul {
     height: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding: 0;
   }
   .main .header #menu ul li {
@@ -245,11 +182,9 @@
   .main .header #menu ul li a {
     font-size: 20px;
     color: #FAFAFA;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   .main .header #menu ul li a:hover {
     opacity: 60%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
