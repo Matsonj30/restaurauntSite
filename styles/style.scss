@@ -1,5 +1,6 @@
 $primaryColor: #F4F1E0;
 $white: #FAFAFA;
+$darkColor:#0C0E0F;
 $orange: rgb(238, 155, 1);
 *{
     margin: 0;
@@ -7,13 +8,49 @@ $orange: rgb(238, 155, 1);
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    position: relative;
+    z-index: 0;
+}
 .wrapper{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+.sectionHeader{
+    display: flex;
+    justify-content: center;
+    h1{
+      font-size: 45px;
+    }
+    ::after{
+        display: block;
+        content: "";
+        border-bottom: 5px solid $orange;
+        transform: scaleX(0.3);
+        padding-bottom: 3px;
+        margin-bottom: 20px;
+    }
+  }
+
+  button{
+    width: 185px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 19px;
+    border: 3px solid $white;
+    background-color: transparent;
+    color: $white;
+    transition: 0.3s ease-in-out;
+    
+}
+button:hover{
+    border: 3px solid $orange;
+    color: $orange;
+}
 @import "homePage/_main.scss";
+@import "homePage/_signature.scss";
 @import "_header.scss";
 @import "_title.scss";
-@import "menu/_menu.scss"
+@import "menu/_menu.scss";
