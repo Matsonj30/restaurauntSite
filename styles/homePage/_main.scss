@@ -1,16 +1,17 @@
 .main{
+        position: relative;
         width: 100%;
         height: 800px;
         overflow: hidden;
         background-color: black;
-   
+        z-index: -2;
     #backgroundImage{
         position: fixed;
         width: calc(max(100%, 1700px));
         height: 1200px;
         opacity: 0.2;
         transform: translateX(-200px);
-        z-index: 0;
+        z-index: -1;
     }
     .introduction{
         position: relative;
@@ -41,7 +42,7 @@
             background-color: transparent;
             color: $white;
             transition: 0.3s ease-in-out;
-
+            
         }
         button:hover{
             border: 3px solid $orange;
@@ -57,7 +58,7 @@
             transform: translateX(0px);
         }
         .introduction{
-            padding-top: 150px;
+            padding-top: 130px;
             h1{
                 font-size: 50px;
             }
