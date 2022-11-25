@@ -1,0 +1,50 @@
+.menuTitle{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.entireMenu{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: fit-content;
+    background-color: $darkColor;
+
+    .menuSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            text-align: center;
+            color: $orange;
+            padding: 30px 00px;
+        }
+        .sectionItems{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            justify-content: center;
+            .foodItem{
+                width: 250px;
+                color: $white;
+                padding: 30px 70px;
+                h3{
+                    font-size: 23px;
+                    letter-spacing: 1px;
+                    padding-bottom: 10px;
+                }
+                h3::after{
+                    content: " $12:99";
+                    font-weight: 600;
+                    color: $orange;
+                }
+            }
+        }
+       
+    }
+
+}

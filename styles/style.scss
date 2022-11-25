@@ -11,6 +11,7 @@ $orange: rgb(238, 155, 1);
 body{
     position: relative;
     z-index: 0;
+    background-color: $darkColor;
 }
 .wrapper{
     width: 100%;
@@ -23,6 +24,7 @@ body{
     justify-content: center;
     h1{
       font-size: 45px;
+      color: $white;
     }
     ::after{
         display: block;
@@ -33,7 +35,13 @@ body{
         margin-bottom: 20px;
     }
   }
-
+  @media(max-width: 415px){
+    .sectionHeader{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
   button{
     width: 185px;
     height: 60px;
@@ -51,6 +59,8 @@ button:hover{
 }
 @import "homePage/_main.scss";
 @import "homePage/_signature.scss";
+@import "homePage/ourStory.scss";
+
 @import "_header.scss";
 @import "_title.scss";
 @import "menu/_menu.scss";
